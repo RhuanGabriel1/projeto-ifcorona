@@ -144,12 +144,12 @@ main{
    background-color: #f1f5f9;
    min-height: calc(100vh - 90px);
 }
-main img{
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.img-content img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer{
