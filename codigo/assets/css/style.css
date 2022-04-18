@@ -144,6 +144,9 @@ main{
    background-color: #f1f5f9;
    min-height: calc(100vh - 90px);
 }
+main img{
+    margin-left: 250px;
+}
 
 footer{
     padding: 15px;
