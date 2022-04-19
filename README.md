@@ -13,6 +13,6 @@ Projeto desenvolvidos pelos estudantes do IFSP Campinas
 
   https://github.com/RhuanGabriel1
 
-->Marcelo dos Santso ALmeida CP3013952
+->Marcelo dos Santos Almeida CP3013952
 
   https://github.com/Marcelo13104
