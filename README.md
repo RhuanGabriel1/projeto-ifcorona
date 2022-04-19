@@ -2,8 +2,9 @@
 Desenvolvimento de um Dashboard para o projeto semestral de Desenvolvimento Web no IFSP
 
 # Imagens
+Home:
 ![imagem 1](https://user-images.githubusercontent.com/74109343/163895329-ed00d6ec-40d6-4005-b690-3af3d580beeb.png)
-
+Contato:
 ![imagem 2](https://user-images.githubusercontent.com/74109343/163895332-a87cca60-343f-4bad-bcff-a0223aff9227.png)
 
 # Colaboradores
