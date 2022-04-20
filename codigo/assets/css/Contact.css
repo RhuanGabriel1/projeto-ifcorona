@@ -69,11 +69,6 @@
     float: right;
 }
 
-#btnVoltar{
-    margin-top: 15px;
-    margin-left: -40px;
-}
-
 ::-webkit-input-placeholder{
     text-indent: 10px;
     color: black;
