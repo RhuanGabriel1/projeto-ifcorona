@@ -76,9 +76,6 @@
     padding-left: 0.4rem;
     text-align: center;
 }
-#nav:checked + .sidebar .sidebar li a {
-    padding-left: 0rem;
-}
 
 #nav:checked + .sidebar .sidebar-brand h2 span:last-child,
 #nav:checked + .sidebar  li a span:last-child{
@@ -113,7 +110,7 @@ header{
 }
 
 header h2{
-    color: #222;
+    color: black;
 }
 
 header label span{
