@@ -1,5 +1,5 @@
 import React from 'react';
-import UserWreapper from './UserWreapper';
+import UserWrapper from './UserWrapper';
 import './Header.css'
 
 const Header = (props) =>{
@@ -9,7 +9,7 @@ const Header = (props) =>{
             <label for="nav" id="cursor"><span className="las la-bars"></span></label>
             Dashboard
         </h2>
-        <UserWreapper/>
+        <UserWrapper/>
         </header>
     )
 }

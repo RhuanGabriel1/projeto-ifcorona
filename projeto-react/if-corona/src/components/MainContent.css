@@ -1,0 +1,12 @@
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 350px;
+}
+
+.img-content img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
