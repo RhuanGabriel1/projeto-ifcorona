@@ -1,4 +1,5 @@
 import React from 'react';
+import './SideBarBrand.css'
 
 const SideBarBrand = (props) =>{
     return(
