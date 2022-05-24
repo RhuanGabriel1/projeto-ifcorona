@@ -1,0 +1,11 @@
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 350px;
+}
+
+main{
+    margin-top:30px;
+    padding: 2rem 1.5rem; 
+    background-color: #f1f5f9;
+    min-height: calc(100vh - 90px);
+ }

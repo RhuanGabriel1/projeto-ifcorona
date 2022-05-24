@@ -1,0 +1,21 @@
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    position: fixed;
+    left: 350px;
+    width: calc(100% - 350px);
+    top: 0;
+    transition: left 300ms;
+}
+
+header h2{
+    color: black;
+}
+
+header label span{
+    font-size: 1.7rem;
+    padding-left: 1rem;
+}

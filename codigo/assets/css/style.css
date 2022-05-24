@@ -141,6 +141,7 @@ main{
    background-color: #f1f5f9;
    min-height: calc(100vh - 90px);
 }
+
 .img-content img{
     display: block;
     max-width: 100%;

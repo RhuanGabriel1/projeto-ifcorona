@@ -5,7 +5,7 @@ import './SideBar.css'
 
 const SideBar = (props) =>{
     return(
-        <div class="sidebar">
+        <div className="sidebar">
             <SideBarBrand/>
             <SideBarMenu/>
         </div>

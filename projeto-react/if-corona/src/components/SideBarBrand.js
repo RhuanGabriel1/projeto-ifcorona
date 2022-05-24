@@ -3,8 +3,8 @@ import './SideBarBrand.css'
 
 const SideBarBrand = (props) =>{
     return(
-    <div class="sidebar-brand">
-        <h2><span class="las la-hand-holding-heart"></span><span> IFCorona==true</span></h2>
+    <div className="sidebar-brand">
+        <h2><span className="las la-hand-holding-heart"></span><span> IFCorona==true</span></h2>
     </div>
     )
 }
