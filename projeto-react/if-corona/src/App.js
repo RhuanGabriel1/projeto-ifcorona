@@ -1,14 +1,7 @@
-import './App.css';
-import MainContent from './components/MainContent/MainContent';
-import SideBar from './components/SideBar/SideBar';
-
+import Router from "./routes/router"
 function App() {
   return (
-    <div className="App">
-      <input type="checkbox" id="nav"/>
-      <SideBar/>
-      <MainContent/>
-    </div>
+    <Router />
   );
 }
 

@@ -5,11 +5,13 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
 
-const MainContent = (props) =>{
+const MainContent = ({children}) =>{
     return(
         <div className="main-content">
             <Header/>
-            <Main/>
+            <Main>
+                {children}
+            </Main>
             <Footer/>
         </div>
     )
