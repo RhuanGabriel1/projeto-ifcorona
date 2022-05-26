@@ -1,5 +1,5 @@
 import React from 'react';
-import './SideBarMenu.css'
+import '../SideBarMenu/SideBarMenu.css'
 
 const SideBarMenu = (props) =>{
     return(

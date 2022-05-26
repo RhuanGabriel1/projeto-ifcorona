@@ -1,8 +1,8 @@
 import React from 'react';
-import './MainContent.css'
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import '../MainContent/MainContent.css'
+import Header from '../Header/Header';
+import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 
 
 const MainContent = (props) =>{

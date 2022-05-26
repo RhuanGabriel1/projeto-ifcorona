@@ -1,6 +1,7 @@
 import React from 'react';
-import UserWrapper from './UserWrapper';
-import './Header.css'
+import UserWrapper from '../UserWrapper/UserWrapper';
+import '../Header/Header.css'
+
 
 const Header = (props) =>{
     return(

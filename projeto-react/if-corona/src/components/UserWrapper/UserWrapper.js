@@ -1,5 +1,5 @@
 import React from 'react';
-import './UserWrapper.css'
+import '../UserWrapper/UserWrapper.css'
 
 const UserWreapper = (props) =>{
     return(
