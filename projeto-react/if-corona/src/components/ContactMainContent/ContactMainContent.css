@@ -1,0 +1,149 @@
+.contact-content h2{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color:#ec0b43;
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+
+.contact-content p{
+    margin-top: 5px;
+    padding-left: 40px;
+    font-size: 1.5rem;
+}
+
+.contact-content textarea{
+    background: lightgray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: medium none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px 5px 10px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.inputContact{
+    background: lightgray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: medium none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px 5px 10px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+#btnEnviarMensagem{
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    float: right;
+}
+
+::-webkit-input-placeholder{
+    text-indent: 10px;
+    color: black;
+}.contact-content h2{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color:#ec0b43;
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+
+.contact-content p{
+    margin-top: 5px;
+    padding-left: 40px;
+    font-size: 1.5rem;
+}
+
+.contact-content textarea{
+    background: lightgray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: medium none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px 5px 10px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.inputContact{
+    background: lightgray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: medium none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px 5px 10px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+#btnEnviarMensagem{
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    float: right;
+}
+
+::-webkit-input-placeholder{
+    text-indent: 10px;
+    color: black;
+}
