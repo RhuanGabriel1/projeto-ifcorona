@@ -7,7 +7,7 @@ const SideBar = (props) =>{
     return(
         <div className="sidebar">
             <SideBarBrand/>
-            <SideBarMenu/>
+            <SideBarMenu sidebar={props.sidebar}/>
         </div>
     )
 }

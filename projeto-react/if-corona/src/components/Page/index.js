@@ -3,12 +3,11 @@ import "../../App.css"
 import MainContent from "../MainContent/MainContent"
 import SideBar from "../SideBar/SideBar"
 
-const Page = ({children}) => {
-
+const Page = ({children,sidebar}) => {
     return(
     <div className="App">
       <input type="checkbox" id="nav"/>
-      <SideBar/>
+        <SideBar sidebar={sidebar}/>
       <MainContent>
       {children}
       </MainContent>

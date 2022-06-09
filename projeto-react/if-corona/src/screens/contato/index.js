@@ -5,10 +5,9 @@ import ContactMainContent from "../../components/ContactMainContent/ContactMainC
 const ContactPage = ()=>{
 
     return(
-        <Page>
+        <Page sidebar="Contact">
             <ContactMainContent>
             </ContactMainContent>
-                
         </Page>
     )
 }
