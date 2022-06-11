@@ -1,0 +1,21 @@
+.card-single{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+}
+
+.card-single h2{
+    color: gray;
+    font-size: 1rem;
+}
+.card-single div:last-child{
+    float: right;
+}
+.card-single div:last-child span{
+    font-size: 3rem;
+    color: #ec0b43;
+}
+
+.card-single span{
+    font-size: 2rem;
+}
