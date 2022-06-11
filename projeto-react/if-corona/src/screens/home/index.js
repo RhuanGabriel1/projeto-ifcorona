@@ -5,7 +5,6 @@ const Home = ()=>{
 
     return(
         <Page sidebar="Dashboard">
-            <h1>pagina de home</h1>
             <Chart/>
         </Page>
     )

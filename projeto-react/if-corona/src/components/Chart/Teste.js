@@ -3,10 +3,17 @@ import React from "react";
 
 const Teste = {
 
+    title: {
+        text: 'Primeiro gráfico teste!'
+    },
+
     series:[{
         name: 'Profit',
-        data:[100, 200, 300, 400, 50, 10,25]
-    }]
+        data:[100, 200, 300, 400, 50, 10,25],
+        name: 'teste',
+        data:[1, 2, 3, 400, 50, 10,25]
+    }],
+
 
 };
 
