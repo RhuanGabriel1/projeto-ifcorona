@@ -3,17 +3,21 @@ import React from "react";
 
 const Teste = {
 
+    chart:{
+        type: 'column',
+        zoomType:'xy'
+    },
+
     title: {
         text: 'Primeiro gráfico teste!'
     },
 
     series:[{
         name: 'Profit',
-        data:[100, 200, 300, 400, 50, 10,25],
-        name: 'teste',
-        data:[1, 2, 3, 400, 50, 10,25]
+        data: {
+            csvUrl: "https://raw.githubusercontent.com/mekhatria/demo_highcharts/master/globalTemperatureChange.csv"
+        }
     }],
-
 
 };
 
