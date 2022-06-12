@@ -6,6 +6,7 @@
 }
 
 .second-inner-container{
+    margin-top: 25rem;
     grid-template-columns: repeat(2, 1fr);
     display: grid;
     justify-content: space-between;
