@@ -9,6 +9,8 @@ const options = {
         type: 'line'
     },
 
+
+
     title:{
         text: "Casos Confirmados de Covid-19"
     },

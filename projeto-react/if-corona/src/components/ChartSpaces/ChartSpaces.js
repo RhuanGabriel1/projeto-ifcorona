@@ -31,7 +31,7 @@ const Chart = (props) =>{
                 </div>
 
                 <div className="second-right-space">
-                    <h1 className="vertical"><span>Mapa do Estado de São Paulo</span></h1>
+                    <h1 className="vertical"><span>Mapa regional</span></h1>
                     <ChartStateMap/>
                 </div>
             </div>
