@@ -9,6 +9,7 @@ header{
     width: calc(100% - 350px);
     top: 0;
     transition: left 300ms;
+    z-index: 1;
 }
 
 header h2{
