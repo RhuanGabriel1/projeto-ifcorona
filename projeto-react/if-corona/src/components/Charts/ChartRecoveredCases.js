@@ -5,7 +5,7 @@ import HighchartsReact from 'highcharts-react-official';
 
 const options = {
     chart: {
-        backgroundColor: '#FCFFC5',
+        backgroundColor: '#fcd9e5',
         type: 'line'
     },
 

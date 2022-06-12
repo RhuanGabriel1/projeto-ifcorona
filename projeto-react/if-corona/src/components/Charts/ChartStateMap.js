@@ -3,6 +3,8 @@ import '../Charts/Charts.css'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
+
+
 const options = {
     chart: {
         backgroundColor: '#FCFFC5',
