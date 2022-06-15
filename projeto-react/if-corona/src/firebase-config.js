@@ -2,7 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "@firebase/firestore"
 
-
 const firebaseConfig = {
     apiKey: "AIzaSyCbG7LKpIBcfRoAB_WxnAWspvnn8eu07eA",
     authDomain: "ifcorona.firebaseapp.com",
@@ -16,7 +15,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-const db = getFirestore(app);
+export const db = getFirestore(app);
 
 
 // https://www.youtube.com/watch?v=jCY6DH8F4oc&ab_channel=PedroTech

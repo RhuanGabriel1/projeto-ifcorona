@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useNavigate } from "react-router";
 import '../SingUp/SingUp.css'
+import { db } from '../../firebase-config';
+import {collection, getDocs, addDoc} from "firebase/firestore"
+import { async } from '@firebase/util';
 
 const SingUp = (props) =>{
     const navigate = useNavigate();
+
+    const [newEmail, setNewEmail] = useState("");
+    const [newName, setNewName] = useState("");
+    const [newPassword, setNewPassword] = useState("");
+    const userCollectionRef = collection(db, "users");
+
+    const createUser = async () =>{
+        await addDoc(userCollectionRef, 
+            {email: newEmail, password: newPassword, name: newName});
+    
+    }
+
     return(
         <>
             <div className="login-container">
@@ -12,13 +27,19 @@ const SingUp = (props) =>{
                 <h3 className='las la-lock'><span>Sign Up</span></h3>
                 <hr />
                 <h4>E-mail: </h4>
-                <input type="text" placeholder='E-mail...'/>
+                <input type="text" placeholder='E-mail...'
+                onChange={(event) => setNewEmail(event.target.value)}
+                />
                 <h4>Nome: </h4>
-                <input type="text" placeholder='Nome...'/>
+                <input type="text" placeholder='Nome...'
+                onChange={(event) => setNewName(event.target.value)}
+                />
                 <h4>Senha: </h4>
-                <input type="password" placeholder='Senha...'/>
+                <input type="password" placeholder='Senha...'
+                onChange={(event) => setNewPassword(event.target.value)}
+                />
                 <br />
-                <button>Sign up</button>
+                <button onClick={createUser}>Sign up</button>
                 <br />
             </div>
 
