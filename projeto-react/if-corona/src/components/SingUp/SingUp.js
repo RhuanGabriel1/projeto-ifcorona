@@ -38,7 +38,7 @@ const SingUp = (props) =>{
                 onChange={(event) => setNewPassword(event.target.value)}
                 />
                 <br />
-                <button onClick={()=>createUser}>Sign up</button>
+                <button onClick={createUser}>Sign up</button>
                 <br />
             </div>
 
