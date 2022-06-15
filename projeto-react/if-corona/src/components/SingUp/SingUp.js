@@ -15,8 +15,7 @@ const SingUp = (props) =>{
 
     const createUser = async () =>{
         await addDoc(userCollectionRef, 
-            {email: newEmail, password: newPassword, name: newName});
-    
+            {email: newEmail, password: newPassword, name: newName });
     }
 
     return(
@@ -31,7 +30,7 @@ const SingUp = (props) =>{
                 onChange={(event) => setNewEmail(event.target.value)}
                 />
                 <h4>Nome: </h4>
-                <input type="text" placeholder='Nome...'
+                <input type="text" placeholder='Nome...' 
                 onChange={(event) => setNewName(event.target.value)}
                 />
                 <h4>Senha: </h4>
@@ -39,7 +38,7 @@ const SingUp = (props) =>{
                 onChange={(event) => setNewPassword(event.target.value)}
                 />
                 <br />
-                <button onClick={createUser}>Sign up</button>
+                <button onClick={()=>createUser}>Sign up</button>
                 <br />
             </div>
 
