@@ -3,10 +3,10 @@ import React from "react";
 import { Route, Routes } from "react-router";
 import ContactPage from "../screens/contato";
 import Home from "../screens/home";
-import Account from "../screens/account";
+import Login from "../screens/login";
+import SingUpPage from "../screens/singup";
 
 function AppRoutes() {
-
 
 	return (
 		<Routes>
@@ -23,9 +23,15 @@ function AppRoutes() {
 				}
 			/>
 			<Route
+				path="/login"
+				element={
+					<Login/>
+				}
+			/>
+			<Route
 				path="/conta"
 				element={
-					<Account/>
+					<SingUpPage/>
 				}
 			/>
 		</Routes>

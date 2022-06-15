@@ -9,18 +9,17 @@ const options = {
     chart: {
         backgroundColor: '#fcd9e5',
         map: topology
-        
     },
     mapNavigation: {
         enabled: true,
         buttonOptions: {
-            alignTo: "spacingBox"
+            alignTo: "spacingBox",
         }
     },
     
     
     colorAxis: {
-        min: 0
+        min: 0,
     },
     series: [
         {
@@ -29,11 +28,6 @@ const options = {
                 hover: {
                     color: "#ec0b43"
                 },
-
-                normal:{
-                    color: '#ec0b43'
-                }
-
             },
             dataLabels: {
                 enabled: true,
@@ -41,15 +35,15 @@ const options = {
             },
             allAreas: false,
             data: [             
-                ['br-sp' , 40],
+                ['br-sp', 40],
                 ['br-mg', 9],
                 ['br-rj', 20],
                 ['br-es', 60],
             ],
 
-                color: '#ec0b43'
         }
     ]
+    
 };
 
 const ChartStateMap = (props) => {

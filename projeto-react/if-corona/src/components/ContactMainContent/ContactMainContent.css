@@ -50,7 +50,7 @@
     width: 100%;
 }
 
-#btnEnviarMensagem{
+.btnEnviarMensagem{
     cursor: pointer;
     border: none;
     margin-top: 15px;
@@ -124,7 +124,7 @@
     width: 100%;
 }
 
-#btnEnviarMensagem{
+.btnEnviarMensagem{
     cursor: pointer;
     border: none;
     margin-top: 15px;

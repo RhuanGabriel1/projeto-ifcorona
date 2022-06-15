@@ -6,6 +6,7 @@
     height: 100%;
     background-color: #ec0b43;
     transition: width 300ms;
+    z-index: 1;
 }
 
 #cursor{

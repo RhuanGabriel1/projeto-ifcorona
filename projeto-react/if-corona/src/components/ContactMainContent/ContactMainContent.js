@@ -14,7 +14,7 @@ const ContactMainContent = (props) =>{
         <input class="inputContact" type="text" placeholder="Digite um assunto..."/>
         <h2>Mensagem</h2>
         <textarea cols="30" rows="10"></textarea>
-        <button id="btnEnviarMensagem" type="submit">Enviar Mensagem</button>
+        <button className="btnEnviarMensagem" type="submit">Enviar Mensagem</button>
     </div>
     )
 }
