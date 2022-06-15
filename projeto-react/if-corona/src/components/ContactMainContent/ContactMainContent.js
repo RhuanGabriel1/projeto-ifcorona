@@ -16,19 +16,19 @@ const ContactMainContent = (props) =>{
 
     const userCollectionRef = collection(db, "contact");
     
-    toast.success("Deu certo!");
-    
+
     const createMessage = async () =>{
         
         try{
             await addDoc(userCollectionRef, 
                 {email: newEmail, name: newName, subject: newSubject, text: newText });
-                <ToastContainer/>
+                toast.success("Deu bom meu bom");
             }catch(error){
-            console.log(error.message);
+                console.log(error.message);
+                toast.error("Deu ruim meu ruim");
+            }
         }
-    }
-
+        
 
     return(
         <div class="contact-content">
@@ -51,6 +51,7 @@ const ContactMainContent = (props) =>{
         onChange={(event) => setNewText(event.target.value)}
         ></textarea>
         <button className="btnEnviarMensagem" onClick={createMessage}>Enviar Mensagem</button>
+        <ToastContainer/>
     </div>
     )
 }
