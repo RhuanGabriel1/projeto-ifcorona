@@ -1,13 +1,18 @@
+/* #dbdbdb */
 .login-container{
     display: block;
     justify-content: center;
     box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
-    background-color: aliceblue;
+    background-color: #FAFAFA;
     border-radius: 5px;
     margin: auto;
     padding: 60px;
     width: 40%;
     margin-top: 100px;
+}
+
+.span-color{
+    color: #ec0b43;
 }
 
 .login-container h1{
@@ -28,7 +33,7 @@
 }
 
 .login-container button{
-    background-color: black;
+    background-color: #ec0b43;
     color: white;
     border-radius: 25px;
     box-sizing: border-box;
@@ -37,6 +42,10 @@
     text-align: center;
     width: 100%;
     margin-top: 25px;
+    padding: 20px 5px 10px 20px;
+    outline: 0;
+    border: 0 none;
+    box-shadow: 0 0 0 0;
 }
 
 .login-container input{
@@ -45,9 +54,39 @@
     background-color: black;
     border-radius: 25px;
     color: white;
+    padding: 20px 5px 10px 20px;
+
+    outline: 0;
+    border: 0 none;
+    box-shadow: 0 0 0 0;
 }
 
-.login-container input::-webkit-input-placeholder{
+.login-container input::-webkit-input-placeholder{  
     color: white;
 }
+
+
+.login-container input:focus::-webkit-input-placeholder{
+    color: black;
+}
+
+
+.create-container{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    padding: 60px;
+    width: 40%;
+    margin-top: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.create-container a{
+    color: #ec0b43;
+}
+
 

@@ -5,7 +5,7 @@ import SingUp from "../../components/SingUp/SingUp"
 const SingUpPage = ()=>{
 
     return(
-        <Page sidebar="SingUp">
+        <Page sidebar="Login">
             <SingUp/>
         </Page>
     )
