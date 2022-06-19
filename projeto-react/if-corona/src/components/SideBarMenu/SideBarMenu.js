@@ -34,6 +34,17 @@ const SideBarMenu = (props) => {
           </a>
         </li>
       ),
+      
+    },
+    {
+      element: (
+        <li>
+          <a href="#/" onClick={() => navigate("/criar")} className={props.sidebar === "Create" ? "active": null}>
+            <span className="las la-plus"></span>
+            <span>Criação</span>
+          </a>
+        </li>
+      ),
     },
   ];
 

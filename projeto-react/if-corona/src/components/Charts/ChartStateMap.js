@@ -1,8 +1,7 @@
 import React from 'react';
 import '../Charts/Charts.css'
-// import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import Highcharts, { color } from "highcharts/highmaps";
+import Highcharts from "highcharts/highmaps";
 import topology from '../Charts/map.json'
 
 const options = {
