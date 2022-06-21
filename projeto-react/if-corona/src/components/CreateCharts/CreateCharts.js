@@ -84,19 +84,18 @@ const CreateCharts = (props) => {
                         value={chartData.night} />
                     
                 </div> 
+                <hr />
+                <button className="btnEnviarMensagem" onClick={() => {
+                    localStorage.setItem("data", JSON.stringify(chartData));
+                    window.location.reload();
+                }}>Atualizar Indicador</button>
                 <div className="user-chart">
                 <HighchartsReact ref={chartRef} className="highcharts-container" 
                         allowChartUpdate={true}
                         highcharts={Highcharts} options={line} />
                  </div>
-                <hr />
-                <span className='vertical'>Nome: </span>
-                <input className="name-text" type="text" placeholder='Insira aqui...'/>
                
-                <button className="btnEnviarMensagem" onClick={() => {
-                    localStorage.setItem("data", JSON.stringify(chartData));
-                    window.location.reload();
-                }}>AtualizarIndicador</button>
+                
                 <button className="btnEnviarMensagem" onClick={handleSubmit}>Enviar Gráfico</button>
             </div>
         </>
