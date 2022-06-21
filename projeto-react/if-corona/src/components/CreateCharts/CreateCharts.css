@@ -13,8 +13,6 @@
 .user-chart{
     display: flex;
     justify-content: center;
-    background-color: lightcoral;
-    height: 100px;
     width: 40%;
     margin-left: 30%;
     margin-top: 100px;
@@ -42,5 +40,22 @@
 }
 
 .data-text input::-webkit-input-placeholder{
+    color: white;
+}
+
+.name-text{
+    margin-left: 35px;
+    background-color: #ec0b43;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: 0;
+    border: 0 none;
+    color: white;
+    box-shadow: 0 0 0 0;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.name-text input::-webkit-input-placeholder{
     color: white;
 }
