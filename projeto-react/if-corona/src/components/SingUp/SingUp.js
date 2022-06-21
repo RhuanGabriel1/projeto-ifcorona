@@ -4,17 +4,27 @@ import '../SingUp/SingUp.css'
 import { db } from '../../firebase-config';
 import {collection, getDocs, addDoc} from "firebase/firestore"
 import { async } from '@firebase/util';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../firebase-config';
 
 const SingUp = (props) =>{
     const navigate = useNavigate();
 
-    const [newEmail, setNewEmail] = useState("");
-    const [newPassword, setNewPassword] = useState("");
+    const [registerEmail, setRegisterEmail] = useState("");
+    const [registerPassword, setRegisterPassword] = useState("");
     const userCollectionRef = collection(db, "users");
 
-    const createUser = async () =>{
-        await addDoc(userCollectionRef, 
-            {email: newEmail, password: newPassword});
+    const register = async () =>{
+        try{
+            const user = await createUserWithEmailAndPassword(
+                auth,
+                registerEmail,
+                registerPassword
+            );
+            console.log(user);
+        }catch(error){
+            console.log(error.message);
+        }
     }
 
     return(
@@ -26,14 +36,14 @@ const SingUp = (props) =>{
                 <hr />
                 <h4>E-mail: </h4>
                 <input type="text" placeholder='E-mail...'
-                onChange={(event) => setNewEmail(event.target.value)}
+                onChange={(event) => setRegisterEmail(event.target.value)}
                 />
                 <h4>Senha: </h4>
                 <input type="password" placeholder='Senha...'
-                onChange={(event) => setNewPassword(event.target.value)}
+                onChange={(event) => setRegisterPassword(event.target.value)}
                 />
                 <br />
-                <button onClick={createUser}>Sign up</button>
+                <button onClick={register}>Sign up</button>
                 <br />
             </div>
 
