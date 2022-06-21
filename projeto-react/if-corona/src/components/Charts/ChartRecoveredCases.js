@@ -19,7 +19,7 @@ const ChartRecoveredCases = (props) =>{
         series:[
             {
             name: "Casos Confirmados",
-            data: [data?.morning,data?.afternoon,data?.night]
+            data: [data?.morning, data?.afternoon, data?.night]
             },
         ],
     }

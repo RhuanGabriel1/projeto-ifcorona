@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { useNavigate } from "react-router";
 import '../SingUp/SingUp.css'
 import { db } from '../../firebase-config';
-import {collection, getDocs, addDoc} from "firebase/firestore"
-import { async } from '@firebase/util';
+import {collection} from "firebase/firestore"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase-config';
 
@@ -12,7 +11,6 @@ const SingUp = (props) =>{
 
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
-    const userCollectionRef = collection(db, "users");
 
     const register = async () =>{
         try{

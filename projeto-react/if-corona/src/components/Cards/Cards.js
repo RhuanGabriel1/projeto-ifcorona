@@ -1,7 +1,6 @@
 import React from 'react';
 import "../Cards/Cards.css"
 import CardSingle from '../CardSingle/CardSingle';
-import DaySelection from '../DaySelection/DaySelection';
 
 
 const Cards = (props) =>{
