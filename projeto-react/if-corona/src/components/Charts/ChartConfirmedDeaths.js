@@ -3,8 +3,8 @@ import '../Charts/Charts.css'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-const ChartConfirmedDeaths = (props) =>{
-    const { confirmedDeaths,selectedDay } = props;
+const ChartConfirmedDeaths = (props) => {
+    const { confirmedDeaths, selectedDay } = props;
     const data = confirmedDeaths.find(item => item.day == selectedDay);
 
     const options = {
@@ -12,24 +12,24 @@ const ChartConfirmedDeaths = (props) =>{
             backgroundColor: '#fcd9e5',
             type: 'line'
         },
-    
-        title:{
+
+        title: {
             text: "Óbitos Confirmados de Covid-19"
         },
-        series:[
+        series: [
             {
-            name: "Óbitos Confirmados",
-            data: [data?.morning, data?.afternoon, data?.night ]
+                name: "Óbitos Confirmados",
+                data: [data?.morning, data?.afternoon, data?.night]
             },
-           ],
-    
+        ],
+
     }
 
     return (
-         <HighchartsReact highcharts={Highcharts} options={options}/>
+        <HighchartsReact highcharts={Highcharts} options={options} />
     )
-      
-    
+
+
 }
 
 

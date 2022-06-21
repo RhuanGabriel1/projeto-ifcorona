@@ -5,7 +5,6 @@ import ChartConfirmedDeaths from '../Charts/ChartConfirmedDeaths';
 import ChartRecoveredCases from '../Charts/ChartRecoveredCases';
 import ChartStateMap from '../Charts/ChartStateMap';
 
-
 const Chart = (props) =>{
     const { chartValues ,selectedDay} = props;
 
