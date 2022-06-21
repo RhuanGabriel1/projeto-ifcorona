@@ -14,17 +14,20 @@ const ChartRecoveredCases = (props) =>{
         },
     
         title:{
-            text: "Casos Confirmados de Covid-19"
+            text: "Casos Recuperados de Covid-19"
         },
+
         series:[
             {
-            name: "Casos Confirmados",
+            name: "Casos Recuperados",
             data: [data?.morning, data?.afternoon, data?.night]
             },
         ],
     }
 
-    return <HighchartsReact highcharts={Highcharts} options={options}/>
+    return (
+        <HighchartsReact highcharts={Highcharts} options={options}/>
+    )
 }
 
 export default ChartRecoveredCases;

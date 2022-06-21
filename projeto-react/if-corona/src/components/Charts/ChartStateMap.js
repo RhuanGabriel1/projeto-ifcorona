@@ -21,13 +21,15 @@ const ChartStateMap = (props) => {
                 alignTo: "spacingBox",
             }
         },
-        
+        title:{
+            text: "Mapa Regional de Ocupação de Leitos"
+        },
         colorAxis: {
             min: 0,
         },
         series: [
             {
-                name: "Random data",
+                name: "Porcentagem de Leitos ocupados",
                 states: {
                     hover: {
                         color: "#ec0b43"

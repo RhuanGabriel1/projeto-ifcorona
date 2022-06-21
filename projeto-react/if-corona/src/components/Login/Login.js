@@ -4,6 +4,8 @@ import '../Login/Login.css'
 import {signInWithEmailAndPassword, onAuthStateChanged, signOut, singu} from "firebase/auth";
 import { auth } from '../../firebase-config';
 
+import {toast, ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = (props) =>{
     const navigate = useNavigate();
@@ -24,8 +26,10 @@ const Login = (props) =>{
                 loginPassword
             );
             console.log(user);
+            toast.success("Login efetuado com sucesso");
         }catch(error){
             console.log(error.message);
+            toast.error("Login incorreto");
         }
     }
 
@@ -53,6 +57,8 @@ const Login = (props) =>{
                 <span>Não tem uma conta? <a href="#/" onClick={() => navigate("/conta")}>Sign Up</a></span>
 
             </div>
+            <ToastContainer/>
+
         </>
     )
 }

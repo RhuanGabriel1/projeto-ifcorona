@@ -29,9 +29,7 @@ const ChartConfirmedCases = (props) =>{
     }
 
     return(
-        <div className="chart-wrap">
-            <HighchartsReact className="highcharts-container" highcharts={Highcharts} options={options}/>
-        </div>
+            <HighchartsReact highcharts={Highcharts} options={options}/>
     )
 }
 

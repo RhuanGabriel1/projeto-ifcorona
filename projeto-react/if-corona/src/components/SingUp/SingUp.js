@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import { useNavigate } from "react-router";
 import '../SingUp/SingUp.css'
-import { db } from '../../firebase-config';
-import {collection} from "firebase/firestore"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase-config';
+import {toast, ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 const SingUp = (props) =>{
     const navigate = useNavigate();
@@ -20,8 +20,10 @@ const SingUp = (props) =>{
                 registerPassword
             );
             console.log(user);
+            toast.error("Conta criada com sucesso");
         }catch(error){
             console.log(error.message);
+            toast.error("A conta já existe");
         }
     }
 
@@ -49,6 +51,7 @@ const SingUp = (props) =>{
                 <span>Já tem uma conta? <a href="#/" onClick={() => navigate("/login")}>Log In</a></span>
 
             </div>       
+            <ToastContainer/>
         </>
 
     )

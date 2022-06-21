@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import '../ContactMainContent/ContactMainContent.css'
 import { db } from '../../firebase-config';
 import {addDoc, collection} from "firebase/firestore"
-import { async } from '@firebase/util';
-
 import {toast, ToastContainer} from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,20 +13,18 @@ const ContactMainContent = (props) =>{
     const [newText, setNewText] = useState("");
 
     const userCollectionRef = collection(db, "contact");
-    
 
     const createMessage = async () =>{
         
         try{
             await addDoc(userCollectionRef, 
                 {email: newEmail, name: newName, subject: newSubject, text: newText });
-                toast.success("Deu bom meu bom");
+                toast.success("Mensagem enviada com sucesso");
             }catch(error){
                 console.log(error.message);
-                toast.error("Deu ruim meu ruim");
+                toast.error("Mensagem não conseguiu ser enviada");
             }
         }
-        
 
     return(
         <div class="contact-content">

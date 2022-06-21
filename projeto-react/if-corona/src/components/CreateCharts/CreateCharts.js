@@ -4,6 +4,8 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import {collection, addDoc} from "firebase/firestore"
 import { db } from '../../firebase-config';
+import {toast, ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const CreateCharts = (props) => {
@@ -18,14 +20,19 @@ const CreateCharts = (props) => {
 
 
     const handleSubmit = async() => {
-        await addDoc(chartCollectionRef, 
+        try{
+            await addDoc(chartCollectionRef, 
             {
                 morning: chartData.morning,
                 afternoon: chartData.afternoon,
                 night: chartData.night
            });
+           toast.success("Gráfico enviada com sucesso");
+        }catch(error){
+            console.log(error.message);
+            toast.success("Gráfico não conseguiu ser enviada");
+        }
     }
-
 
     const line = {
         chart: {
@@ -98,6 +105,7 @@ const CreateCharts = (props) => {
                 
                 <button className="btnEnviarMensagem" onClick={handleSubmit}>Enviar Gráfico</button>
             </div>
+            <ToastContainer/>
         </>
     )
 }
