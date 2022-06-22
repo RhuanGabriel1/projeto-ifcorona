@@ -18,6 +18,9 @@ const ChartConfirmedCases = (props) => {
         title: {
             text: "Casos Confirmados de Covid-19"
         },
+        xAxis: { 
+            categories: ['Manhã', 'Tarde', 'Noite']
+        },
 
         series: [
             {

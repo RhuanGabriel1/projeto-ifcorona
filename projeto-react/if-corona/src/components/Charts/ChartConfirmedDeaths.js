@@ -16,6 +16,9 @@ const ChartConfirmedDeaths = (props) => {
         title: {
             text: "Óbitos Confirmados de Covid-19"
         },
+        xAxis: { 
+            categories: ['Manhã', 'Tarde', 'Noite']
+        },
         series: [
             {
                 name: "Óbitos Confirmados",
