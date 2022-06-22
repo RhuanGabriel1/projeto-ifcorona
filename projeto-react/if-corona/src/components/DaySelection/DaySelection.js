@@ -11,8 +11,8 @@ const DaySelection = (props) => {
             </div>
             <div className='select'>
                 <select value={props.selectedDay} onChange={(e) => props.setSelectedDay(e.target.value)}>
-                    {props.values.sort((a,b)=>a.day-b.day).map(item => (
-                    <option value={item.day} > {item.day} </option>))}
+                    {props.values.sort((a, b) => a.day - b.day).map(item => (
+                        <option value={item.day} > {item.day} </option>))}
                 </select>
             </div>
         </>

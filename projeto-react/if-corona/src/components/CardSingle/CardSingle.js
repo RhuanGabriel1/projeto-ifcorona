@@ -2,9 +2,9 @@ import React from 'react';
 import "../CardSingle/CardSingle.css"
 
 
-const CardSingle = (props) =>{
+const CardSingle = (props) => {
 
-    return(
+    return (
         <div className="card-single">
             <h2>{props.title}</h2>
             <span>{props.value}</span>
@@ -14,6 +14,5 @@ const CardSingle = (props) =>{
         </div>
     )
 }
-
 
 export default CardSingle;

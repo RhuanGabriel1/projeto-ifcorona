@@ -7,7 +7,7 @@ import HighchartsReact from 'highcharts-react-official';
 const ChartConfirmedCases = (props) => {
     const { confirmedCases, selectedDay } = props;
     const data = confirmedCases.find(item => item.day == selectedDay);
-    
+
 
     const options = {
         chart: {
@@ -18,7 +18,7 @@ const ChartConfirmedCases = (props) => {
         title: {
             text: "Casos Confirmados de Covid-19"
         },
-        xAxis: { 
+        xAxis: {
             categories: ['Manhã', 'Tarde', 'Noite']
         },
 

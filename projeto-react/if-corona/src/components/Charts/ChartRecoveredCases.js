@@ -18,7 +18,7 @@ const ChartRecoveredCases = (props) => {
         title: {
             text: "Casos Recuperados de Covid-19"
         },
-        xAxis: { 
+        xAxis: {
             categories: ['Manhã', 'Tarde', 'Noite']
         },
 

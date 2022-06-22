@@ -2,11 +2,11 @@ import React from "react"
 import Page from "../../components/Page"
 import Login from "../../components/Login/Login"
 
-const LoginPage = ()=>{
+const LoginPage = () => {
 
-    return(
+    return (
         <Page sidebar="Login">
-            <Login/>
+            <Login />
         </Page>
     )
 }

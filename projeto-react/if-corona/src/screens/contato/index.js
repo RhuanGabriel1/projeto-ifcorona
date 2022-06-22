@@ -2,9 +2,9 @@ import React from "react"
 import Page from "../../components/Page"
 import ContactMainContent from "../../components/ContactMainContent/ContactMainContent"
 
-const ContactPage = ()=>{
+const ContactPage = () => {
 
-    return(
+    return (
         <Page sidebar="Contact">
             <ContactMainContent>
             </ContactMainContent>

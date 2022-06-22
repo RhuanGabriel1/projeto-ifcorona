@@ -4,11 +4,11 @@ import "../SideBarMenu/SideBarMenu.css";
 
 const SideBarMenu = (props) => {
   const navigate = useNavigate();
-     const sidebarItems = [
+  const sidebarItems = [
     {
       element: (
         <li>
-          <a href="#/" onClick={() => navigate("/")} className={props.sidebar === "Dashboard" ? "active": null}>
+          <a href="#/" onClick={() => navigate("/")} className={props.sidebar === "Dashboard" ? "active" : null}>
             <span className={"las la-chart-line"}></span>
             <span>Dashboard</span>
           </a>
@@ -18,7 +18,7 @@ const SideBarMenu = (props) => {
     {
       element: (
         <li>
-          <a href="#/" onClick={() => navigate("/contato")} className={props.sidebar === "Contact" ? "active": null}>
+          <a href="#/" onClick={() => navigate("/contato")} className={props.sidebar === "Contact" ? "active" : null}>
             <span className="las la-at"></span>
             <span>Contato</span>
           </a>
@@ -28,18 +28,18 @@ const SideBarMenu = (props) => {
     {
       element: (
         <li>
-          <a href="#/" onClick={() => navigate("/login")} className={props.sidebar === "Login" ? "active": null}>
+          <a href="#/" onClick={() => navigate("/login")} className={props.sidebar === "Login" ? "active" : null}>
             <span className="las la-user-circle"></span>
             <span>Conta</span>
           </a>
         </li>
       ),
-      
+
     },
     {
       element: (
         <li>
-          <a href="#/" onClick={() => navigate("/criar")} className={props.sidebar === "Create" ? "active": null}>
+          <a href="#/" onClick={() => navigate("/criar")} className={props.sidebar === "Create" ? "active" : null}>
             <span className="las la-plus"></span>
             <span>Criação</span>
           </a>
@@ -50,7 +50,7 @@ const SideBarMenu = (props) => {
 
   return (
     <div className="sidebar-menu">
-          <ul>{sidebarItems.map(item=>item.element)}</ul>
+      <ul>{sidebarItems.map(item => item.element)}</ul>
     </div>
   );
 };

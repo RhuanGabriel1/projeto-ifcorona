@@ -3,11 +3,11 @@ import CreateCharts from "../../components/CreateCharts/CreateCharts"
 import Page from "../../components/Page"
 
 
-const CreatePage = ()=>{
+const CreatePage = () => {
 
-    return(
+    return (
         <Page sidebar="Create">
-            <CreateCharts/>
+            <CreateCharts />
         </Page>
     )
 }

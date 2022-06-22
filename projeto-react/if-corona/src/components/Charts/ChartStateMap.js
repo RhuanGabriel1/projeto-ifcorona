@@ -7,7 +7,7 @@ import topology from '../Charts/map.json'
 
 
 const ChartStateMap = (props) => {
-    const { stateMap,selectedDay } = props;
+    const { stateMap, selectedDay } = props;
     const data = stateMap.find(item => item.day == selectedDay);
 
     const options = {
@@ -21,7 +21,7 @@ const ChartStateMap = (props) => {
                 alignTo: "spacingBox",
             }
         },
-        title:{
+        title: {
             text: "Mapa Regional de Ocupação de Leitos"
         },
         colorAxis: {
@@ -40,26 +40,25 @@ const ChartStateMap = (props) => {
                     format: "{point.name}"
                 },
                 allAreas: false,
-                data: [             
+                data: [
                     ['br-sp', data?.sp],
                     ['br-mg', data?.mg],
                     ['br-rj', data?.rj],
                     ['br-es', data?.es],
                 ],
-    
+
             }
         ]
-        
+
     };
 
     return (
-            <HighchartsReact
-                highcharts={Highcharts}
-                constructorType={"mapChart"}
-                options={options}
-            />
+        <HighchartsReact
+            highcharts={Highcharts}
+            constructorType={"mapChart"}
+            options={options}
+        />
     )
 }
-
 
 export default ChartStateMap;

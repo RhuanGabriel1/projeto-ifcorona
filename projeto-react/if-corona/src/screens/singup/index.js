@@ -2,11 +2,11 @@ import React from "react"
 import Page from "../../components/Page"
 import SingUp from "../../components/SingUp/SingUp"
 
-const SingUpPage = ()=>{
+const SingUpPage = () => {
 
-    return(
+    return (
         <Page sidebar="Login">
-            <SingUp/>
+            <SingUp />
         </Page>
     )
 }
